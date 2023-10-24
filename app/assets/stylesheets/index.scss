@@ -1,0 +1,832 @@
+/* このファイル内はホームページつまりview/index.htmlやapplication/htmlの文字の色やブロックを作ったりするための部分 */
+
+/* ホームページ名 */
+.top{
+     text-align: center;
+     color: gray;
+     font-size: 34px;
+     background-image: url("kagoshima_header_intop");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/* ホームページのログイン機能 */
+.rgstr{
+     font-size: 16px;
+     text-align: right; 
+}
+/* ホームページのヘッダー */
+
+/* ホームページの背景画像の部分 */
+.hbody{
+     background-image: url("hmpgbg.JPG");
+     background-repeat: no-repeat; /* 画像の繰り返しを防ぐための記述 */
+     background-size: cover;
+     width:100%
+}
+/* 鹿児島県の画像 */
+.kagoshimakengazou{
+     position: relative; /* これの設定によってposition:absoluteを設定した画像の下敷きになれる */
+     display: block; /* これは必要に応じて調整する部分 */
+     max-width: 100%;
+     margin-right: auto;
+     margin-left: auto;
+}
+a{
+     color: black;
+     text-decoration: none;
+}
+A:hover{
+     color: red;
+}
+/* スマホから見た人の画面サイズの調整 */
+@media screen and (max-width: 405px) {
+     /* ここに横幅が405px以下の時に発動するスタイルを記述 */
+/* 鹿児島市 */
+.capacity{
+     position: absolute; /* これの設定によってposition:relativeを設定した画像の上に文字や画像を入れる */
+
+     top: 41%;
+    left: 46.1%; 
+    
+     transform: translate(-50%,-50%);
+     margin-left: auto;
+     margin-bottom: auto;
+     margin-right: auto;
+     margin-top: auto;
+     font-size: small;
+}
+/* 日置市 */
+.city1{
+     position: absolute;
+     top: 38.8%;
+    left: 36.1%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 姶良市 */
+.city2{
+     position: absolute;
+     top: 34.4%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 霧島市 */
+.city3{
+     position: absolute;
+     top: 32.2%;
+     left: 61%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     max-width: 100%;
+     height: auto;
+     font-size: small;
+}
+/* 南さつま市 */
+.city4{
+     position: absolute;
+     top: 48.2%;
+     left: 29.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 南九州市 */
+.city5{
+     position: absolute;
+     top: 49.7%;
+     left: 38.3%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 枕崎市 */
+.city6{
+     position: absolute;
+     top: 52.8%;
+     left: 30.7%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* いちき串木野市 */
+.city7{
+     position: absolute;
+     top: 36.4%;
+     left: 30.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 薩摩川内市 */
+.city8{
+     position: absolute;
+     top: 32.2%;
+     left: 32.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 指宿市 */
+.city9{
+     position: absolute;
+     top: 55.2%;
+     left: 49.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* さつま町 */
+.city10{
+     position: absolute;
+     top: 27.5%;
+     left: 42.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 湧水町 */
+.city11{
+     position: absolute;
+     top: 27.2%;
+     left: 59.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 曽於市 */
+.city12{
+     position: absolute;
+     top: 38.8%;
+     left: 73.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 志布志市 */
+.city13{
+     position: absolute;
+     top: 43.2%;
+     left: 83.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 垂水市 */
+.city14{
+     position: absolute;
+     top: 43.5%;
+     left: 61.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 鹿屋市 */
+.city15{
+     position: absolute;
+     top: 47.3%;
+     left: 67.1%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 大崎町 */
+.city16{
+     position: absolute;
+     top: 47.1%;
+     left: 77.8%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 東串良町 */
+.city17{
+     position: absolute;
+     top: 49.1%;
+     left: 79.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 阿久根市 */
+.city18{
+     position: absolute;
+     top: 25.1%;
+     left: 22.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 出水市 */
+.city19{
+     position: absolute;
+     top: 23.4%;
+     left: 35.1%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 伊佐市 */
+.city20{
+     position: absolute;
+     top: 23.1%;
+     left: 50.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 長島町 */
+.city21{
+     position: absolute;
+     top: 20.1%;
+     left: 18.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 肝付町 */
+.city22{
+     position: absolute;
+     top: 52.7%;
+     left: 77.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 錦江町 */
+.city23{
+     position: absolute;
+     top: 56.7%;
+     left: 67.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 南大隅町 */
+.city24{
+     position: absolute;
+     top: 59.7%;
+     left: 60.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}    /* ここに横幅が767pxより大きい時に発動するスタイルを記述 */
+  
+}
+/* ipad及びパソコンを小画面で見る人のための調整 */
+/* 完成：2023.9.15 15:54 */
+@media screen and (max-width: 754px)and(min-width: 405px){
+     /* 横幅480px以上かつ754px以下でみる時に発動する */
+/* 鹿児島市 */
+.capacity{
+     position: absolute; /* これの設定によってposition:relativeを設定した画像の上に文字や画像を入れる */
+
+     top: 52%;
+    left: 45.2%; 
+     font-size: small;
+     transform: translate(-50%,-50%);
+     margin-left: auto;
+     margin-right: auto;
+}
+/* 日置市 */
+.city1{
+     position: absolute;
+     top: 52.8%;
+     left: 35.8%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 姶良市 */
+.city2{
+     position: absolute;
+     top: 43.4%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 霧島市 */
+.city3{
+     position: absolute;
+     top: 41.3%;
+     left: 60.7%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+    
+     
+     font-size: small;
+}
+/* 南さつま市 */
+.city4{
+     position: absolute;
+     top: 66.8%;
+     left: 28.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 南九州市 */
+.city5{
+     position: absolute;
+     top: 68.7%;
+     left: 38.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 枕崎市 */
+.city6{
+     position: absolute;
+     top: 72.2%;
+     left: 31.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* いちき串木野市 */
+.city7{
+     position: absolute;
+     top: 48.2%;
+     left: 27.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 薩摩川内市 */
+.city8{
+     position: absolute;
+     top: 41.5%;
+     left: 34.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 指宿市 */
+.city9{
+     position: absolute;
+     top: 75.2%;
+     left: 49.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* さつま町 */
+.city10{
+     position: absolute;
+     top: 34.2%;
+     left: 42.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 湧水町 */
+.city11{
+     position: absolute;
+     top: 34.2%;
+     left: 58.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 曽於市 */
+.city12{
+     position: absolute;
+     top: 49.8%;
+     left: 72.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 志布志市 */
+.city13{
+     position: absolute;
+     top: 59.2%;
+     left: 80.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 垂水市 */
+.city14{
+     position: absolute;
+     top: 58.6%;
+     left: 59.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 鹿屋市 */
+.city15{
+     position: absolute;
+     top: 60.1%;
+    left: 66.1%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 大崎町 */
+.city16{
+     position: absolute;
+     top: 63.4%;
+     left: 74.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 東串良町 */
+.city17{
+     position: absolute;
+     top: 66.8%;
+     left: 74.8%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 阿久根市 */
+.city18{
+     position: absolute;
+     top: 31.1%;
+     left: 25.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 出水市 */
+.city19{
+     position: absolute;
+     top: 28.1%;
+     left: 34.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 伊佐市 */
+.city20{
+     position: absolute;
+     top: 27.1%;
+     left: 50.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 長島町 */
+.city21{
+     position: absolute;
+     top: 22.1%;
+     left: 19.5%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 肝付町 */
+.city22{
+     position: absolute;
+     top: 72.6%;
+     left: 75.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 錦江町 */
+.city23{
+     position: absolute;
+     top: 77.9%;
+     left: 66.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 南大隅町 */
+.city24{
+     position: absolute;
+     top: 83.9%;
+    left: 58.7%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+}
+
+/* ホームページのプロフィールの部分 */
+.hmpgpro{
+     height: 50px;
+     background-color: #ffefd5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+/* パソコンの大画面を見る人のための調整 */
+/* 完成：2023.9.15 15:24 */
+@media screen and (min-width: 1024px) {
+      /* ここに横幅が1024pxより大きい時に発動するスタイルを記述 */
+ /* 鹿児島市 */
+.capacity{
+     position: absolute; /* これの設定によってposition:relativeを設定した画像の上に文字や画像を入れる */
+
+     top: 62%;
+    left: 46.1%; 
+
+     transform: translate(-50%,-50%);
+     margin-left: auto;
+     margin-bottom: auto;
+     margin-right: auto;
+     margin-top: auto;
+     font-size: small;
+}
+/* 日置市 */
+.city1{
+     position: absolute;
+     top: 58.9%;
+     left: 42.1%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 姶良市 */
+.city2{
+     position: absolute;
+     top: 47.4%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 霧島市 */
+.city3{
+     position: absolute;
+     top: 45.2%;
+     left: 56.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     max-width: 100%;
+     height: auto;
+     font-size: small;
+}
+/* 南さつま市 */
+.city4{
+     position: absolute;
+     top: 75.2%;
+     left: 38.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 南九州市 */
+.city5{
+     position: absolute;
+     top: 75.7%;
+     left: 44.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 枕崎市 */
+.city6{
+     position: absolute;
+     top: 81.8%;
+     left: 39.5%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* いちき串木野市 */
+.city7{
+     position: absolute;
+     top: 52.2%;
+     left: 37.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 薩摩川内市 */
+.city8{
+     position: absolute;
+     top: 45.2%;
+     left: 39.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 指宿市 */
+.city9{
+     position: absolute;
+     top: 87.2%;
+     left: 49.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* さつま町 */
+.city10{
+     position: absolute;
+     top: 37.5%;
+     left: 45.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 湧水町 */
+.city11{
+     position: absolute;
+     top: 36.2%;
+     left: 55.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 曽於市 */
+.city12{
+     position: absolute;
+     top: 57.8%;
+     left: 63.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 志布志市 */
+.city13{
+     position: absolute;
+     top: 65.2%;
+     left: 67.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 垂水市 */
+.city14{
+     position: absolute;
+     top: 66.6%;
+     left: 55.2%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 鹿屋市 */
+.city15{
+     position: absolute;
+     top: 72.1%;
+    left: 59.1%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 大崎町 */
+.city16{
+     position: absolute;
+     top: 71.4%;
+     left: 63.8%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 東串良町 */
+.city17{
+     position: absolute;
+     top: 75.1%;
+     left: 63.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 阿久根市 */
+.city18{
+     position: absolute;
+     top: 31.1%;
+     left: 35.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 出水市 */
+.city19{
+     position: absolute;
+     top: 29.1%;
+     left: 41.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 伊佐市 */
+.city20{
+     position: absolute;
+     top: 27.1%;
+     left: 50.4%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 長島町 */
+.city21{
+     position: absolute;
+     top: 22.1%;
+     left: 32.8%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 肝付町 */
+.city22{
+     position: absolute;
+     top: 83.3%;
+     left: 63.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 錦江町 */
+.city23{
+     position: absolute;
+     top: 88.7%;
+     left: 59.6%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}
+/* 南大隅町 */
+.city24{
+     position: absolute;
+     top: 93.7%;
+    left: 56.9%;
+     transform: translate(-50%,-50%);
+     margin-right: auto;
+     margin-left: auto;
+     font-size: small;
+}    
+     
+
+}

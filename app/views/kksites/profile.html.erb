@@ -1,0 +1,33 @@
+<!-- このファイルはプロフィールを示す所である -->
+<body>
+ 
+ <div class="probg">
+   <p class="prduce">制作者 -Profile-</p> <!-- <p>や<div>,<h1>～<h6>などのタグはdisplayの初期値がブロックになっているためこれらを真ん中にするにはmargin-leftとmargin-rightをそれぞれautoにする必要がある -->
+      <div class="left-container">
+        <p class="mine">
+          <b>名前</b>:サイキ <br>
+          <b>誕生日</b>:7月7日 <br>
+          <b>出身地</b>:鹿児島県鹿児島市 <br>
+          <b>大学</b>:福岡大学 <br>
+          <b>趣味</b>:主にスポーツ全般、でも卓球が苦手、ダーツ、飲み会 <br>
+          
+        </p>
+        <%= image_tag 'myphoto.JPG',class:'right-container' %> 
+     </div>
+     <div class="jikoshoukai">
+      <span class="prdic">自己紹介</span>
+        <p class="prdcrip">
+           現役大学生で2年生です。今一人暮らしをしています。<br>
+           趣味は上記以外にyoutubeを見るのでyoutuberは結構よく知っている方だと自負しています。(多分だけど、、)<br>
+           また、レゲエやヒップホップのラップバトルもよく見ます!そして、最近は漫画を読んでいます。因みに好きな漫画は転スラです。<br>
+           地元が大好きでよく地元の旅をします。<br>
+           もし、鹿児島に旅で来る予定があれば、このサイトを見て参考になれば嬉しいです<br>
+           鹿児島は特に観光名所が多いので来る機会があれば色んな観光名所をまわると楽しいです!!<br>
+           また、このサイトは日々更新していくのでどんどん紹介していこうと思います。<br>
+        </p>
+      </div>
+       <p class="returnpro">
+         <%= link_to 'ホームページに戻る',kksites_path %>
+       </p>
+ </div>
+</body>

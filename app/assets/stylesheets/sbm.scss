@@ -1,0 +1,81 @@
+/* 投稿する場所(管理者にしか飛ばないサイト) */
+/* 内容の文字の部分を編集する部分 */
+.pcntt{
+     display: flex;            
+     justify-content: center;
+     align-items: center;
+     height: 80px;
+     font-size: larger;
+     background-color: #B22222;
+}
+/* 市の詳細内容を書く部分を編集する部分 */
+.pdtal{
+     text-align: center;
+     
+     height: 185.4px;
+     background-image: url("back-spring.jpg");
+     background-size: cover;
+     object-fit: cover;
+}
+/* Imageという文字を編集する部分 */
+.pphto{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 80px;
+     background-color: #00BFFF;
+}
+/* 写真を投稿する部分を編集する部分 */
+.pimg{
+     text-align: center;
+     
+     height: 185.4px;
+     background-image: url("back-summer.jpg");
+     background-size: cover;
+     object-fit: cover;
+}
+/* 投稿カテゴリーという文字を編集する部分 */
+.psctgry{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: larger;
+     height: 80px;
+     //font-family: ;
+     background-color: #FF8C00;
+}
+/* カテゴリー分けに投稿する部分を編集する部分 */
+.pctgr{
+     text-align: center;
+     
+     height: 185.4px;
+     background-image: url("back-autumn.jpg");
+     background-size: cover;
+     object-fit: cover;
+}
+/* 投稿という文字を編集する部分 */
+.ps{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 80px;
+     font-size: large;
+     background-color: #708090;
+}
+/* 投稿するボタンを編集する部分 */
+.pbttn{
+     text-align: center;
+     height: 185.4px;
+     background-image: url("back-winter.jpg");
+     background-size: cover;
+     object-fit: cover;
+}
+/* ホームページを戻る部分を編集する部分(管理者画面用) */
+.kgx{
+     height: 30px;
+     display: flex;
+     background-color:#008BBB;
+     justify-content: center;
+     align-items: center;
+}
+/* このサイトの背景画像を編集する部分 */

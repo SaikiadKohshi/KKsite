@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kksite: one
+  user: one
+
+two:
+  kksite: two
+  user: two

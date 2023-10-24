@@ -1,0 +1,33 @@
+<!-- このファイルはログイン画面を示す部分 -->
+<div class="Logn">
+<div class="logn">
+<h2 class="logi">Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+ 
+  <p class="emailli">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </p>
+
+  <p class="passwordli">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </p>
+
+  <% if devise_mapping.rememberable? %>
+    <p class="remb">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </p>
+  <% end %>
+
+  <p class="actionsli">
+    <%= f.submit "Log in" %>
+  </p>
+  </div>
+ </div>
+<% end %>
+<div class="rshard">
+<%= render "users/shared/links" %>
+</div>

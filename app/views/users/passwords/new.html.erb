@@ -1,0 +1,22 @@
+<!-- このファイルはパスワードをリセットする画面を示す部分 -->
+<div class="Pswdr">
+<div class="pswdr">
+<h2 class="pawrr">Forgot your password?</h2>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+  <p class="emaillip">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </p>
+
+  <p class="actionslip">
+    <%= f.submit "Send me reset password instructions" %>
+  </p>
+  </div>
+ </div>
+<% end %>
+<div class="rshard">
+<%= render "users/shared/links" %>
+</div>

@@ -1,0 +1,100 @@
+<!-- このファイルはホームページを示す部分 --> 
+  <body>
+    <div class="top">
+          <h2>KKsite</h2>
+          
+    </div>
+   <div class="hbody">
+     <%= image_tag '1536317.png',class:'kagoshimakengazou' %>
+      <p class="capacity">
+        <%= link_to '鹿児島市',:controller => "kksites", :action => "kagoshimashi" %>
+      </p>
+      <p class="city1">
+        <%= link_to '日置市',:controller => "kksites", :action => "hiokishi" %>
+      </p>
+      <p class="city2">
+        <%= link_to '姶良市',:controller => "kksites", :action => "airashi" %>
+      </p>
+      <p class="city3">
+        <%= link_to '霧島市',:controller => "kksites", :action => "kirishimashi" %>'
+      </p>
+      <p class="city4">
+        <%= link_to '南さつま市',:controller => "kksites", :action => "minamisatsumashi" %>
+      </p>
+      <p class="city5">
+        <%= link_to '南九州市',:controller => "kksites", :action => "minamikyushushi" %>
+      </p> 
+      <p class="city6">
+        <%= link_to '枕崎市',:controller => "kksites", :action => "makurazakishi" %>     
+      </p> 
+      <p class="city7">
+        <%= link_to 'いちき串木野市',:controller => "kksites", :action => "itikikushikinoshi" %>
+      </p>
+      <p class="city8">
+        <%= link_to '薩摩川内市',:container => "kksites", :action => "satsumasendaishi" %>
+      </p>
+      <p class="city9">
+        <%= link_to '指宿市',controller => "kksites", :action => "ibusukishi" %>
+      </p>
+      <p class="city10">
+        <%= link_to 'さつま町',controller => "kksites", :action => "satsumatyou" %>
+      </p>
+      <p class="city11">
+        <%= link_to '湧水町',controller => "kksites", :action => "yusuityou" %>
+      </p>
+      <p class="city12">
+        <%= link_to '曽於市',controller => "kksites", :action => "soshi" %>
+      </p>
+      <p class="city13">
+        <%= link_to '志布志市',controller => "kksites", :action => "shibushishi" %>
+      </p>
+      <p class="city14">
+        <%= link_to '垂水市',controller => "kksites", :action => "tarumizushi" %>
+      </p>
+      <p class="city15">
+        <%= link_to '鹿屋市',controller => "kksites", :action => "kanoyashi" %>
+      </p>
+      <p class="city16">
+        <%= link_to '大崎町',controller => "kksites", :action => "osakityou" %>
+      </p>
+      <p class="city17">
+        <%= link_to '東串良町',controller => "kksites", :action => "higashikushiratyou" %>
+      </p>
+      <p class="city18">
+        <%= link_to '阿久根市',controller => "kksites", :action => "akuneshi" %>
+      </p>
+      <p class="city19">
+        <%= link_to '出水市',controller => "kksites", :action => "izumishi" %>
+      </p>
+      <p class="city20">
+        <%= link_to '伊佐市',controller => "kksites", :action => "isashi" %>
+      </p>
+      <p class="city21">
+        <%= link_to '長島町',controller => "kksites", :action => "nagashimatyou" %>
+      </p>
+      <p class="city22">
+        <%= link_to '肝付町',controller => "kksites", :action => "kimotsukityou" %>
+      </p>
+      <p class="city23">
+        <%= link_to '錦江町',controller => "kksites", :action => "kinkoutyou" %>
+      </p>
+      <p class="city24">
+        <%= link_to '南大隅町',controller => "kksites", :action => "minamiosumityou" %>
+      </p>
+     </div>
+    </div>
+    <div class="hmpgpro">
+       <%= link_to 'プロフィール',:controller => "kksites", :action => "profile" %>
+    </div>
+    <!-- 管理者権限の部分  -->
+    <footer>
+       <% if user_signed_in? %>
+            <!-- 同じサイト上でも管理者しか表示されないようにするための記述 -->
+            <% if current_user.admin? %> 
+                 <%= link_to "秘密のページへ", new_kksite_path %>
+            <% end %>
+       <% end %>
+    </footer>
+  </body>
+<!-- 補足 -->
+  <!--img src="images/1536317.png" class="kagoshimakengazou" --><!-- この表現はHTMLの場合しか表現できない。html.erbの場合はimage_tag' 'である。--> 

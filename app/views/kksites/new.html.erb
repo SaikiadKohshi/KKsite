@@ -1,0 +1,28 @@
+<!-- 投稿する部分 -->
+<!-- 自分にしか飛ばないサイト -->
+<%= form_for @kksite do |s| %>
+ <div class="bgscrty">
+   <h2 class="pcntt">
+      <%= s.label :cc, "内容" %>
+   </h2>
+   <p class="pdtal">
+      <%= s.text_field :cc %>
+   </p>
+   <h2 class="pphto">Image</h2>
+   <p class="pimg">
+       <%= s.label :image %>
+       <i class="fa-regular fa-image fa-lg" style="color: #00FFFF"><%= s.file_field :image %></i>
+   </p>
+   <h2 class="psctgry">投稿Category</h2>
+   <p class="pctgr">
+   <%= s.select :cck,[["鹿児島市","kagoshimashi"],["姶良市","airashi"],["霧島市","kirishimashi"],["湧水町","yusuityou"],["伊佐市","isashi"],["出水市","izumishi"],["さつま町","satsumatyou"],["阿久根市","akuneshi"],["長島町","nagashimatyou"],["薩摩川内市","satsumasendaishi"],["いちき串木野市","itikikushikinoshi"],["日置市","hiokishi"],["南さつま市","minamisatsumashi"],["枕崎市","makurazakishi"],["南九州市","minamikyushushi"],["指宿市","ibusukishi"],["曾於市","soshi"],["志布志市","shibushishi"],["南大隅町","minamiosumityou"],["錦江町","kinkoutyou"],["鹿屋市","kanoyashi"],["垂水市","tarumizushi"],["大崎町","osakityou"],["東串良町","higashikushiratyou"],["肝付町","kimotsukityou"]], include_blank: "どの投稿にする？" %>
+   </p>
+   <h2 class="ps">"投稿"</h2>
+   <p class="pbttn">
+   <%= s.submit "投稿する" %>
+   </p>
+ </div>
+<% end %>
+<div class="kgx">
+ <%= link_to "ホームページに戻る", kksites_path %>
+</div>

@@ -1,0 +1,121 @@
+/* ログインサイトや新規登録をするサイト、パスワードをリセットするサイトをデザインする部分 */
+/* 新規登録ページサイトのデザイン */
+/* 新規登録ページサイトのデザイン部分(親要素) */
+.Regst{
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     background-image: url("Rgstersun.jpeg");
+     height: 779.8px;
+     background-repeat: no-repeat;
+     background-size: 100% 100%; /* これによってもともと小さかった写真がパソコンのサイトの大きさやスマホのサイトの大きさにそって画面いっぱいに映るようになる */
+}
+/* 新規登録ページサイトのデザイン部分(子要素) */
+.regst{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     /* 上の4つとposition; relativeの設定によってスマホで開いたり、パソコンで開いてもそのサイトのど真ん中に置くことができる */
+}
+/* Sign upという文字を編集する部分 */
+.rgst{
+     text-align: center;
+}
+/* Emailを新しく入力する所を編集する部分 */
+.emailsu{
+     text-align: center;
+}
+/* Passwordを新しく入力する所を編集する部分 */
+.passwordsu{
+     text-align: center;
+}
+/* Passwordをもう一回入力する所を編集する部分 */
+.passwordcnfrmtn{
+     text-align: center;
+}
+/* Sign upボタンの所を編集する部分 */
+.actionssu{
+     text-align: center;
+}
+/* ログインサイトのデザイン */
+/* ログインサイトのデザイン部分(親要素) */
+.Logn{
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     background-image: url("Limoon.jpeg");
+     object-fit: cover;
+     height: 754px;
+     background-size: 100% 100%;
+}
+/* ログインサイトのデザイン部分(子要素) */
+.logn{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     /* 上の4つとposition; relativeの設定によってスマホで開いたり、パソコンで開いてもそのサイトのど真ん中に置くことができる */
+}
+/* Log inという文字を編集する部分 */
+.logi{
+     text-align: center;
+     color: white;
+}
+/* Emailの入力する所を編集する部分 */
+.emailli{
+     text-align: center;
+     color: white;
+}
+/* Passwordの入力する所を編集する部分 */
+.passwordli{
+     text-align: center;
+     color: white;
+}
+/* remember meをチェックする所を編集する部分 */
+.remb{
+     text-align: center;
+     color: white;
+}
+/* Log inボタンの所を編集する部分 */
+.actionsli{
+     text-align: center;
+     color: white;
+}
+/* パスワードをリセットするサイトのデザイン */
+/* パスワードをリセットするサイトのデザイン部分(親要素) */
+.Pswdr{
+     position: relative;
+     justify-self: center;
+     align-items: center;
+     background-image: url("Pswdcnfrmtn.jpg");
+     object-fit: cover;
+     height: 755.8px;
+     background-size: 100% 100%;
+}
+/* パスワードをリセットするサイトのデザイン部分(子要素) */
+.pswdr{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+/* Forgot your password?という文字を編集する部分 */
+.pawrr{
+     text-align: center;
+     color: wheat;
+}
+/* Emailの入力する所を編集する部分 */
+.emaillip{
+     text-align: center;
+     color: wheat;
+}
+/* Send me reset password instructionsボタンを編集する部分 */
+.actionslip{
+     text-align: center;
+}
+/* 新規登録ページのLog inとログインのSign upとForgot your password?の所を編集する部分 */
+.rshard{
+      text-align: center;
+      background-color: #555555;
+}

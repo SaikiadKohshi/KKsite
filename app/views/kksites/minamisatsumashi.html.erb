@@ -1,0 +1,68 @@
+<div class="minamisatsumashifile">
+<h3>Sightseeing of 南さつま市</h3>
+</div>
+  <!-- 投稿機能 -->
+  <% @minamisatsumashi.each do |t| %>
+    <div class="ptmstms">
+   
+          <p class="dcrps"><b>内容</b><br><%= t.cc %></p>
+          <%= image_tag t.image_url, class:'image' if t.image? %>
+          <!-- 投稿内容と画像を削除するための記述(管理者権限の部分) -->
+          <% if user_signed_in? %>
+           <% if current_user.admin? %> 
+             <%= button_to "削除する", kksite_path(t.id), method: :delete %>  
+           <% end %>
+          <% end %>
+     <!-- いいね機能 -->
+     <div class="gds">
+      <% if user_signed_in? %>
+        <% if current_user.already_liked?(t) %>
+          <%= button_to kksite_like_path(id: t.id, kksite_id: t.id), method: :delete do %>
+           <!-- いいねを取り消す機能の部分 -->   
+               <i class="fa-solid fa-eraser fa-2x" style="color: #333399"><p class="erase">いいねを取り消す</p></i><br><%= t.likes.count %>
+          <% end %>
+        <% else %>
+          <%= button_to kksite_likes_path(id: t.id, kksite_id: t.id), method: :post do %>
+           <!-- いいね機能の部分 -->   
+              <p><i class="fa-solid fa-thumbs-up fa-2x" style="color: #FF1A6F"></i></p><%= t.likes.count %>
+          <% end %>
+        <% end %>
+      <% else %>
+          <p>いいねの数 ↓ </p><%= t.likes.count %>
+      <% end %>
+     </div>
+     <!-- コメント機能 -->
+   <div class="comment-wrapper">
+     <p class="cmntc">コメント一覧</p>
+     <% t.comments.each do |f| %>
+       <div>
+         <%= f.user.email unless f.user.blank? %>
+         <br>
+         <%= f.cr %>
+         <%= button_to "削除する", kksite_comment_path(t.id, f.id), method: :delete %>
+         
+       </div>
+         <br>
+     <% end %>
+   
+     <% if user_signed_in? %>
+       <%= form_with(model: [t,Comment.new ], local: true) do |t| %>
+         <%= t.text_area :cr %>
+         <%= button_tag type: "submit" do %>
+          <!-- コメントする機能の部分 -->
+             <i class="fa-regular fa-comments" style="color: #D2691E"></i> 左の欄にコメント書いたらこのボタンを押してね!
+        <% end %>
+       <% end %>
+     <% end %>
+   </div>
+    
+  
+   </div>  
+  <% end %>
+      <div class="kgr">
+          <%= link_to 'ホームページに戻る',kksites_path %>
+      </div>
+   </div>
+
+
+
