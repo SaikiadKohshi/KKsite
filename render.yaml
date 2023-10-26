@@ -1,0 +1,21 @@
+databases:
+  - name: KKsitessg_DB
+    databaseName: kksitessg_db
+    user: kksitessg_db_user
+    region: Oregon(US West)
+
+services:
+  - type: web
+    name: KKsite
+    env: ruby
+    region: Oregon(US West)
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: KKsitessg_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
